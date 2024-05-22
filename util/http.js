@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const BACKEND_URL =
-  "https://react-native-course-8e82a-default-rtdb.firebaseiocom";
+  "https://react-native-course-8e82a-default-rtdb.firebaseio.com";
 
 export async function storeExpense(expenseData) {
   let response = await axios.post(BACKEND_URL + "/expenses.json", expenseData);
